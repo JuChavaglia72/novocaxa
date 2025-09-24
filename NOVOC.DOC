@@ -1,0 +1,274 @@
+
+ 
+  MIRO 3.0 - DOCUMENTA─▌O DO SISTEMA
+  дддддддддддддддддддддддддддддддддд
+ 
+  SISTEMA : NOVOC
+  TITULO  : Controle de Caixa - Versao 3.20030922                                           
+ 
+ 
+  ARQUIVOS
+  мммммммм
+ 
+  AREA      : 1
+  ARQUIVO   : CADCLI.DBF
+ 
+  CAMPO       TIPO      TAMANHO  DECIMAIS  DESCRICAO
+  дддддддддд  дддддддд  ддддддд  дддддддд  ддддддддддддддддддддддддддддддддддд
+  CODIGO      CARACTER        4         0                                     
+  RAZAO       CARACTER       40         0                                     
+  ENDERECO    CARACTER       34         0                                     
+  BAIRRO      CARACTER       25         0                                     
+  CIDADE      CARACTER       20         0                                     
+  ESTADO      CARACTER        9         0                                     
+  CNPJ        CARACTER       18         0                                     
+  TELEFONES   CARACTER       30         0                                     
+  ATIVOINATI  CARACTER        1         0                                     
+ 
+  INDICE    : CADCL001.NTX
+  EXPRESSAO : CNPJ
+  ORDEM     : 1
+ 
+  INDICE    : CADCL002.NTX
+  EXPRESSAO : CODIGO
+  ORDEM     : 2
+ 
+  INDICE    : CADCL003.NTX
+  EXPRESSAO : RAZAO
+  ORDEM     : 3
+  дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+ 
+ 
+ 
+  AREA      : 2
+  ARQUIVO   : MOVIMENT.DBF
+ 
+  CAMPO       TIPO      TAMANHO  DECIMAIS  DESCRICAO
+  дддддддддд  дддддддд  ддддддд  дддддддд  ддддддддддддддддддддддддддддддддддд
+  NORECIBO    CARACTER       10         0                                     
+  VENCIMENTO  DATA            8         0                                     
+  RECEBIMENT  DATA            8         0                                     
+  CLIENTE     CARACTER        4         0                                     
+  RAZAO       CARACTER       40         0                                     
+  SERVICO1    CARACTER        3         0                                     
+  VLRSERV1    NUMERICO        9         2                                     
+  SERVICO2    CARACTER        3         0                                     
+  VLRSERV2    NUMERICO        9         2                                     
+  SERVICO3    CARACTER        3         0                                     
+  VLRSERV3    NUMERICO        9         2                                     
+  SERVICO4    CARACTER        3         0                                     
+  VLRSERV4    NUMERICO        9         2                                     
+  SERVICO5    CARACTER        3         0                                     
+  VLRSERV5    NUMERICO        9         2                                     
+  SERVICO6    CARACTER        3         0                                     
+  VLRSERV6    NUMERICO        9         2                                     
+  TSERVICOS   NUMERICO       11         2                                     
+  BAIXADO     CARACTER        1         0                                     
+ 
+  INDICE    : MOVIM004.NTX
+  EXPRESSAO : CLIENTE
+  ORDEM     : 1
+ 
+  INDICE    : MOVIM005.NTX
+  EXPRESSAO : DTOS(VENCIMENTO)
+  ORDEM     : 2
+ 
+  INDICE    : MOVIM006.NTX
+  EXPRESSAO : MES_ANO(RECEBIMENT)
+  ORDEM     : 3
+ 
+  INDICE    : MOVIM007.NTX
+  EXPRESSAO : MES_ANO(VENCIMENTO)+RAZAO
+  ORDEM     : 4
+ 
+  INDICE    : MOVIM008.NTX
+  EXPRESSAO : NORECIBO
+  ORDEM     : 5
+ 
+  INDICE    : MOVIM009.NTX
+  EXPRESSAO : RAZAO
+  ORDEM     : 6
+  дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+ 
+ 
+ 
+  AREA      : 3
+  ARQUIVO   : SERVICOS.DBF
+ 
+  CAMPO       TIPO      TAMANHO  DECIMAIS  DESCRICAO
+  дддддддддд  дддддддд  ддддддд  дддддддд  ддддддддддддддддддддддддддддддддддд
+  CODIGO      CARACTER        3         0                                     
+  DESCRICAO   CARACTER       25         0                                     
+ 
+  INDICE    : SERVI010.NTX
+  EXPRESSAO : CODIGO
+  ORDEM     : 1
+ 
+  INDICE    : SERVI011.NTX
+  EXPRESSAO : DESCRICAO
+  ORDEM     : 2
+  дддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд
+ 
+ 
+ 
+ 
+  SISTEMA NOVOC - MODULOS (PRG)
+  ммммммммммммммммммммммммммммм
+ 
+  зддддддддддддддддбддддддддддддддддддддддддддддддд©
+  Ё     Modulo     Ё           Descricao           Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOC.PRG      Ё Modulo principal              Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCfu1.PRG   Ё Modulo de funcoes - Parte I   Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCfu2.PRG   Ё Modulo de funcoes - Parte II  Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCfu3.PRG   Ё Modulo de funcoes - Parte III Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCarq.PRG   Ё Rotina de criacao de arquivos Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCsos.PRG   Ё Rotinas de help               Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCinc.PRG   Ё Menu de cadastros             Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCi01.PRG   Ё Clientes                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCi02.PRG   Ё Servicos                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCi03.PRG   Ё Movimentos                    Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCcon.PRG   Ё Menu de manuten┤■es           Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCc01.PRG   Ё Clientes                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCc02.PRG   Ё Servicos                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCc03.PRG   Ё Movimentos                    Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCrel.PRG   Ё Menu de relatorios            Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё      -=-       Ё Clientes                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr02.PRG   Ё Alfabetica                    Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr03.PRG   Ё Numerica                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё      -=-       Ё Servicos                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr05.PRG   Ё Alfabetica                    Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr06.PRG   Ё Numerica                      Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё      -=-       Ё Movimentos                    Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr98.PRG   Ё Em.de Rec.- Data              Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr08.PRG   Ё Em.de Rec.- Geral             Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr09.PRG   Ё Em.de Rec.- Avulso            Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr99.PRG   Ё Em.de Rec.- Cliente           Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr10.PRG   Ё Rec.Baixados                  Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr11.PRG   Ё Rec.Em Aberto                 Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё      -=-       Ё Especiais                     Ё
+  цддддддддддддддддеддддддддддддддддддддддддддддддд╢
+  Ё NOVOCr13.PRG   Ё Fluxo de Caixa                Ё
+  юддддддддддддддддаддддддддддддддддддддддддддддддды
+ 
+ 
+ 
+  CONFIGURACAO DO SISTEMA
+  ммммммммммммммммммммммм
+ 
+- Linguagem
+ 
+  здддбдддддддддддддд©  здддбддддддддддддд©
+  Ё Ш Ё Clipper 5.01 Ё  Ё   Ё Clipper 5.2 Ё
+  юдддадддддддддддддды  юдддаддддддддддддды
+ 
+ 
+- Tratamento de arquivos
+ 
+  здддбддддддддддддд©  здддбдддддддддддддд©
+  Ё Ш Ё Monousuario Ё  Ё   Ё Multiusuario Ё
+  юдддаддддддддддддды  юдддадддддддддддддды
+ 
+ 
+- Endentacao 
+ 
+  здддддддддддд©
+  Ё 03 Colunas Ё
+  юдддддддддддды
+ 
+ 
+- Visualizar blocos
+ 
+  здддбддддд©  здддбддддд©
+  Ё Ш Ё Sim Ё  Ё   Ё N└o Ё
+  юдддаддддды  юдддаддддды
+ 
+ 
+- Comentarios
+ 
+  здддбддддд©  здддбддддд©
+  Ё Ш Ё Sim Ё  Ё   Ё N└o Ё
+  юдддаддддды  юдддаддддды
+ 
+ 
+- Rotinas
+ 
+  здддбддддддддддддддддддддддддддддддд©
+  Ё Ш Ё Calendario                    Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Calculadora                   Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Senhas de acesso              Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Help                          Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Back-up                       Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Dos shell                     Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Atualizacao de data           Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Criacao de arquivos           Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Sombras                       Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Mouse                         Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Papel de parede               Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Configuracao de cores         Ё
+  цдддеддддддддддддддддддддддддддддддд╢
+  Ё Ш Ё Gerador de relatorios         Ё
+  юдддаддддддддддддддддддддддддддддддды
+ 
+ 
+- Cores do sistema
+ 
+  здддддддддддддддддддддддбддддддддддбдддддддддддддддддддддддддддддддд©
+  Ё     Especificacao     Ё Setcolor Ё      Descricao das cores       Ё
+  цдддддддддддддддддддддддеддддддддддедддддддддддддддддддддддддддддддд╢
+  Ё  Fundo da tela        Ё    B+/B  Ё  Azul Brilhante / Azul         Ё
+  Ё  Menu                 Ё     N/W  Ё  Preto / Branco                Ё
+  Ё  Destaque do menu     Ё    W+/R  Ё  Branco Brilhante / Vermelho   Ё
+  Ё  Janela de dialogo    Ё     W/B  Ё  Branco / Azul                 Ё
+  Ё  Box janela de dialogoЁ    N/BG  Ё  Preto / Cyan                  Ё
+  Ё  Botoes               Ё     N/W  Ё  Preto / Branco                Ё
+  Ё  Botao em destaque    Ё    W+/W  Ё  Branco Brilhante / Branco     Ё
+  Ё  Gets                 Ё     N/W  Ё  Preto / Branco                Ё
+  Ё  Get em destaque      Ё    W+/R  Ё  Branco Brilhante / Vermelho   Ё
+  Ё  Tela de apresenta┤└o Ё    W+/B  Ё  Branco Brilhante / Azul       Ё
+  Ё  Caracteres avulsos   Ё     W/B  Ё  Branco / Azul                 Ё
+  Ё  Cercaduras           Ё     W/B  Ё  Branco / Azul                 Ё
+  Ё  T║tulo               Ё   W+/BG  Ё  Branco Brilhante / Cyan       Ё
+  юдддддддддддддддддддддддаддддддддддадддддддддддддддддддддддддддддддды
+ 
+ 
+/* Final NOVOC.DOC */

@@ -106,67 +106,37 @@
   SISTEMA NOVOC - MODULOS (PRG)
   
 
-  ³     Modulo     ³           Descricao           ³
-
-  ³ NOVOC.PRG      ³ Modulo principal              ³
- 
-  ³ NOVOCfu1.PRG   ³ Modulo de funcoes - Parte I   ³
- 
-  ³ NOVOCfu2.PRG   ³ Modulo de funcoes - Parte II  ³
-
-  ³ NOVOCfu3.PRG   ³ Modulo de funcoes - Parte III ³
-
-  ³ NOVOCarq.PRG   ³ Rotina de criacao de arquivos ³
-
-  ³ NOVOCsos.PRG   ³ Rotinas de help               ³
- 
-  ³ NOVOCinc.PRG   ³ Menu de cadastros             ³
- 
-  ³ NOVOCi01.PRG   ³ Clientes                      ³
- 
-  ³ NOVOCi02.PRG   ³ Servicos                      ³
- 
-  ³ NOVOCi03.PRG   ³ Movimentos                    ³
- 
-  ³ NOVOCcon.PRG   ³ Menu de manuten‡”es           ³
-
-  ³ NOVOCc01.PRG   ³ Clientes                      ³
-
-  ³ NOVOCc02.PRG   ³ Servicos                      ³
- 
-  ³ NOVOCc03.PRG   ³ Movimentos                    ³
- 
-  ³ NOVOCrel.PRG   ³ Menu de relatorios            ³
-
-  ³      -=-       ³ Clientes                      ³
-
-  ³ NOVOCr02.PRG   ³ Alfabetica                    ³
-
-  ³ NOVOCr03.PRG   ³ Numerica                      ³
-
-  ³      -=-       ³ Servicos                      ³
- 
-  ³ NOVOCr05.PRG   ³ Alfabetica                    ³
- 
-  ³ NOVOCr06.PRG   ³ Numerica                      ³
- 
-  ³      -=-       ³ Movimentos                    ³
- 
-  ³ NOVOCr98.PRG   ³ Em.de Rec.- Data              ³
-
-  ³ NOVOCr08.PRG   ³ Em.de Rec.- Geral             ³
- 
-  ³ NOVOCr09.PRG   ³ Em.de Rec.- Avulso            ³
-  
-  ³ NOVOCr99.PRG   ³ Em.de Rec.- Cliente           ³
-
-  ³ NOVOCr10.PRG   ³ Rec.Baixados                  ³
- 
-  ³ NOVOCr11.PRG   ³ Rec.Em Aberto                 ³
-
-  ³      -=-       ³ Especiais                     ³
-  
-  ³ NOVOCr13.PRG   ³ Fluxo de Caixa                ³
+  Modulo         Descricao           
+  NOVOC.PRG      Modulo principal              
+  NOVOCfu1.PRG   Modulo de funcoes - Parte I   
+  NOVOCfu2.PRG   Modulo de funcoes - Parte II  
+  NOVOCfu3.PRG   Modulo de funcoes - Parte III 
+  NOVOCarq.PRG   Rotina de criacao de arquivos 
+  NOVOCsos.PRG   Rotinas de help               
+  NOVOCinc.PRG   Menu de cadastros             
+  NOVOCi01.PRG   Clientes                      
+  NOVOCi02.PRG   Servicos                      
+  NOVOCi03.PRG   Movimentos                    
+  NOVOCcon.PRG   Menu de manuten‡”es           
+  NOVOCc01.PRG   Clientes                      
+  NOVOCc02.PRG   Servicos                      
+  NOVOCc03.PRG   Movimentos                    
+  NOVOCrel.PRG   Menu de relatorios            
+      -=-        Clientes                      
+  NOVOCr02.PRG   Alfabetica                    
+  NOVOCr03.PRG   Numerica                      
+      -=-        Servicos                      
+  NOVOCr05.PRG   Alfabetica                    
+  NOVOCr06.PRG   Numerica                      
+      -=-        Movimentos                    
+  NOVOCr98.PRG   Em.de Rec.- Data              
+  NOVOCr08.PRG   Em.de Rec.- Geral             
+  NOVOCr09.PRG   Em.de Rec.- Avulso            
+  NOVOCr99.PRG   Em.de Rec.- Cliente           
+  NOVOCr10.PRG   Rec.Baixados                  
+  NOVOCr11.PRG   Rec.Em Aberto                 
+      -=-        Especiais                     
+  NOVOCr13.PRG   Fluxo de Caixa                
  
  
  
@@ -175,23 +145,17 @@
 
  
 - Linguagem
- 
- 
-  ³ û ³ Clipper 5.01 ³  ³   ³ Clipper 5.2 ³
+  Clipper 5.01 
  
  
  
 - Tratamento de arquivos
- 
- 
-  ³ û ³ Monousuario ³  ³   ³ Multiusuario ³
+  Monousuario
 
  
  
 - Endentacao 
- 
-
-  ³ 03 Colunas ³
+  03 Colunas 
  
  
  
